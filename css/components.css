@@ -12,4 +12,12 @@
     transition: background 0.3s, transform 0.2s;
 }
 
-.btn:hover { background: var(--verde-claro);}
+.btn:hover { background: var(--verde-claro); transform: scale(1.03);}
+
+.btn--outline {
+    background: transparent;
+    color: var(--verder-oscuro);
+    border: 2px solid var(--verder-oscuro);
+}
+
+.btn--outline:hover { background: var(--verder-oscuro);}
