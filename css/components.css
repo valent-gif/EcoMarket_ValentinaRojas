@@ -21,3 +21,14 @@
 }
 
 .btn--outline:hover { background: var(--verder-oscuro);}
+
+/*--Tarjeta--*/
+
+.card {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
