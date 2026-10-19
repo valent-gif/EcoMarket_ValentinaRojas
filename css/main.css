@@ -38,3 +38,11 @@ ul { list-style: none;}
 /*-- Tipografia-- */
 
 h1, h2, h3 { line-height: 1.2; color: var(--verde-oscuro); }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.6rem; margin-bottom: 1rem;}
+h3 { font-size: 1.2rem; }
+
+@media (min-width: 1024px) {
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2rem; }
+}
