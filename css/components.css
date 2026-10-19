@@ -4,5 +4,12 @@
     padding: 0.7rem 1.4rem;
     background: var(--verder-oscuro);
     color: var(--blanco);
-    
+    border: none;
+    border-radius: var(--radio);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
 }
+
+.btn:hover { background: var(--verde-claro);}
