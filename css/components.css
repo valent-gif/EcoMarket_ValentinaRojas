@@ -1,0 +1,38 @@
+/*--Botones--*/
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    background: var(--verder-oscuro);
+    color: var(--blanco);
+    border: none;
+    border-radius: var(--radio);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover { background: var(--verde-claro); transform: scale(1.03);}
+
+.btn--outline {
+    background: transparent;
+    color: var(--verder-oscuro);
+    border: 2px solid var(--verder-oscuro);
+}
+
+.btn--outline:hover { background: var(--verder-oscuro);}
+
+/*--Tarjeta--*/
+
+.card {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__img { width: 100%; height: 200px; object-fit: cover;}
+.card__body { padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
+.card__body .btn { margin-top: auto; text-align: center; }
