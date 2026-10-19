@@ -12,3 +12,11 @@
   --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
   --max-ancho: 1200px;
 }
+
+/*--Reset--*/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
