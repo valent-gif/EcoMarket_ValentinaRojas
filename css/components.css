@@ -56,3 +56,95 @@
     margin-top: auto;
     text-align: center;
 }
+
+
+
+
+/*-- COMPONENTES DE CATÁLOGO-- */
+
+
+
+/* Buscador superior */
+.input-search {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid transparent;
+  background: var(--blanco);
+  border-radius: 50px;
+  box-shadow: var(--sombra);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-search:focus {
+  border-color: var(--verde-oscuro);
+}
+
+/* Grupos del barra lateral*/
+.filtro-grupo {
+  border: none;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.filtro-grupo__titulo {
+  font-weight: 600;
+  color: var(--verde-oscuro);
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.filtro-opcion {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.filtro-opcion input {
+  accent-color: var(--verde-oscuro);
+}
+
+.input-range {
+  width: 100%;
+  accent-color: var(--verde-oscuro);
+  cursor: pointer;
+}
+
+.rango-valores {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--gris);
+}
+
+/* Adaptación de Card de Producto */
+.card--producto {
+  position: relative;
+}
+
+.card__categoria {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--gris);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.card__titulo {
+  font-size: 1.05rem;
+}
+
+.card__precio {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--verde-oscuro);
+  margin-top: 0.2rem;
+}
+
