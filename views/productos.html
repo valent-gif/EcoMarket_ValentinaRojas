@@ -13,47 +13,66 @@
     
 
     <!--Encabezado comun-->
-    <header class="header">
-        <div class="header__inner">
-            <a href="../index.html" class="logo">🌿 EcoMarket</a>
+<header class="header">
+    <div class="header__inner">
+        <a href="../index.html" class="logo">🌿 EcoMarket</a>
 
-            <nav class="nav" aria-label="=Navegacion Principal">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html" class="active">Productos</a></li>
-                    <li><a href="sobre-nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        <nav class="nav" aria-label="=Navegacion Principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
 
-            <div class="header__acciones">
-                <a href="#buscador" aria-label="Buscar">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>"
-                </a>
-                <a href="#" aria-label="Carrito">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>"
-                </a>
-            </div>
+        <div class="header__acciones">
+            <a href="#buscador" aria-label="Buscar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>"
+            </a>
+            <a href="#" aria-label="Carrito">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>"
+            </a>
         </div>
-    </header>
+    </div>
+</header>
 
 
-    <main class="catalogo-layout">
-        <!--Barra Superior de busqueda-->
-        <section class="buscador-bar" id="buscador">
-            <div class="buscador-bar__inner">
-                <input type="search" class="input-search" placeholder="Buscar productos ecologicos" aria-label="Buscar productos">
+<main class="catalogo-layout">
+    <!--Barra Superior de busqueda-->
+    <section class="buscador-bar" id="buscador">
+        <div class="buscador-bar__inner">
+            <input type="search" class="input-search" placeholder="Buscar productos ecologicos" aria-label="Buscar productos">
+        </div>
+    </section>
+
+    <div class="catalogo-contenido">
+        <!--Barra Lateral (sticky)-->
+        <aside class="sidebar-filtros" aria-label="Filtros de productos">
+            <h2 class="sidebar-filtros__titulo">Filtros</h2>
+
+            <!--Categorias-->
+            <fieldset class="filtro-grupo">
+                <legend class="filtro-grupo__titulo">Categorías</legend>
+                <label class="filtro-opcion"><input type="checkbox"> Hogar</label>
+                <label class="filtro-opcion"><input type="checkbox"> Moda</label>
+                <label class="filtro-opcion"><input type="checkbox"> Cuidado Personal</label>
+                <label class="filtro-opcion"><input type="checkbox"> Alimentos</label>
+            </fieldset>
+
+            <!--Rango de Precios-->
+            <div class="filtro-grupo">
+                <label for="precio-rango" class="filtro-grupo__titulo">Precio Maximo</label>
+                <input type="range" id="precio-rango" min="5000" max="150000" step="5000" class="input-range">
+                <div class="rango-valores">
+                    <span>$5.000</span>
+                    <span>$150.000</span>
+                </div>
             </div>
-        </section>
-
-        <div class="catalogo-contenido">
-            <!--Barra Lateral (sticky)-->
-            <aside class="sidebar-filtros" aria-label="Filtros de productos">
-                <h2 class="sidebar-filtros__titulo">Filtros</h2>
 
 
 
-            </aside>
+        </aside>
 
         </section>
 </body>
