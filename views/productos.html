@@ -46,11 +46,10 @@
     </section>
 
     <div class="catalogo-contenido">
-      <!-- Sidebar de Filtros (Sticky) -->
+      <!-- Sidebar de Filtros (Sticky) comentado para mostrar solo las 20 tarjetas
       <aside class="sidebar-filtros" aria-label="Filtros de productos">
         <h2 class="sidebar-filtros__titulo">Filtros</h2>
 
-        <!-- Categorías -->
         <fieldset class="filtro-grupo">
           <legend class="filtro-grupo__titulo">Categorías</legend>
           <label class="filtro-opcion"><input type="checkbox"> Hogar</label>
@@ -59,7 +58,6 @@
           <label class="filtro-opcion"><input type="checkbox"> Alimentos</label>
         </fieldset>
 
-        <!-- Rango de Precios -->
         <div class="filtro-grupo">
           <label for="precio-rango" class="filtro-grupo__titulo">Precio Máximo</label>
           <input type="range" id="precio-rango" min="5000" max="150000" step="5000" class="input-range">
@@ -69,7 +67,6 @@
           </div>
         </div>
 
-        <!-- Disponibilidad -->
         <fieldset class="filtro-grupo">
           <legend class="filtro-grupo__titulo">Disponibilidad</legend>
           <label class="filtro-opcion"><input type="radio" name="disponibilidad" checked> Todos</label>
@@ -77,6 +74,7 @@
           <label class="filtro-opcion"><input type="radio" name="disponibilidad"> Agotados</label>
         </fieldset>
       </aside>
+      -->
 
       <!-- Grid de 20 Productos -->
       <section class="catalogo-grid-container" aria-label="Lista de productos">
@@ -362,7 +360,9 @@
             </div>
           </article>
         </div>
-    </main>
+      </section>
+    </div>
+  </main>
 
     <!-- Footer común -->
 <footer class="footer">

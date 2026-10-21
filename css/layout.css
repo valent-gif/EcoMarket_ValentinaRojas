@@ -142,6 +142,27 @@
     .nav ul { flex-wrap: nowrap; gap: 1.5rem; }
     .grid-destacados { grid-template-columns: repeat(3, 1fr); }
 }
+/*--Catálogo--*/
+.catalogo-layout {
+  max-width: var(--max-ancho);
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.buscador-bar {
+  margin-bottom: 2rem;
+}
+
+.buscador-bar__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.catalogo-grid-container {
+  flex: 1;
+  width: 100%;
+}
+
 /* Grid base en móvil */
 .grid-productos {
   display: grid;
