@@ -1,17 +1,19 @@
-/*Tarjeta que se eleva al pasar el mouse*/
+/* Tarjeta que se eleva al pasar el mouse */
 .card--hover {
-    transition: transform 0.3s ease, box shadow 0.3s ease
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card--hovaer:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 18);
+.card--hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
 }
 
-/*Entrada del hero*/
-
+/* Entrada del hero */
 @keyframes aparecer {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-.hero__contenido { animation: apareecer 0.8s ease-out; }
+
+.hero__contenido {
+  animation: aparecer 0.8s ease-out;
+}

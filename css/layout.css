@@ -10,11 +10,12 @@
 .header__inner {
     max-width: var(--max-ancho);
     margin: 0 auto;
-    padding: 0.8rem 1 rem;
+    padding: 0.8rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .logo {
@@ -29,29 +30,35 @@
     font-size: 1.3rem;
 }
 
-/*Menu: simepre visible, en una fila en movil**/
-
+/*--Menu: siempre visible, en una fila aparte en movil--*/
 .nav {
     width: 100%;
     order: 3;
 }
 
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 1.2rem;
+}
+
 .nav a {
     display: block;
-    padding: 0-3rem 0;
+    padding: 0.3rem 0;
     font-weight: 500;
     border-bottom: 2px solid transparent;
-    transition: color 0.3s; border-color: 0.3s;
+    transition: color 0.3s, border-color 0.3s;
 }
 
 .nav a:hover,
 .nav a.active {
     color: var(--verde-oscuro);
-    border-color: var(--verde-oscuro)
+    border-color: var(--verde-oscuro);
 }
 
 /*--Hero--*/
-.hero{
+.hero {
     min-height: 70vh;
     display: flex;
     align-items: center;
@@ -59,7 +66,7 @@
     text-align: center;
     padding: 2rem 1rem;
     background:
-        linerar-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
         url("../img/hero/hero.jpg") center / cover no-repeat;
     color: var(--blanco);
 }
@@ -92,7 +99,6 @@
 }
 
 /*--Footer--*/
-
 .footer {
     background: var(--verde-oscuro);
     color: var(--blanco);
@@ -104,27 +110,35 @@
     margin-bottom: 0.5rem;
 }
 
-.footer a:hover{
+.footer__inner {
+    max-width: var(--max-ancho);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.footer a:hover {
     text-decoration: underline;
 }
+
 .footer__copy {
     text-align: center;
     margin-top: 1.5rem;
     font-size: 0.9rem;
     opacity: 0.85;
 }
-/*--Table--*/
+
+/*--Tablet--*/
 @media (min-width: 600px) {
     .grid-destacados { grid-template-columns: repeat(2, 1fr); }
-    .foter__inner { grid-template-columns: repeat(3, 1fr); }
+    .footer__inner { grid-template-columns: repeat(3, 1fr); }
 }
-
 
 /*--Desktop--*/
 @media (min-width: 900px) {
-    .header__inner { flex-wrap: nowrap;}
-    .nav { width: auto; order: 0;}
-    .nav ul { flex-wrap: nowrap; gap: 1.5rem;}
-    .grid-destacados { grid-template-columns: repeat(3, 1fr);}
+    .header__inner { flex-wrap: nowrap; }
+    .nav { width: auto; order: 0; }
+    .nav ul { flex-wrap: nowrap; gap: 1.5rem; }
+    .grid-destacados { grid-template-columns: repeat(3, 1fr); }
 }
-
