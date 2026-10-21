@@ -142,3 +142,37 @@
     .nav ul { flex-wrap: nowrap; gap: 1.5rem; }
     .grid-destacados { grid-template-columns: repeat(3, 1fr); }
 }
+/* Grid base en móvil */
+.grid-productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Tablet (2 columnas) */
+@media (min-width: 600px) {
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop (4 columnas) */
+@media (min-width: 1024px) {
+  .catalogo-contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .sidebar-filtros {
+    width: 260px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 90px;
+  }
+
+  .grid-productos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
