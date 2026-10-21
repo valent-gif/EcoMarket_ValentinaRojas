@@ -17,10 +17,36 @@
     flex-wrap: wrap;
 }
 
-.logo  { font-size: 1.4rem; font-weight: 700; color: var(--verde-oscuro);}
-.header__acciones { display: flex; gap: 1rem; font-size: 1.3rem;}
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--verde-oscuro);
+}
 
-/*Menu movil (checkbox hack)*/
-.menu-toggle { display: none; }
-.menu-btn { font-size: 1.6rem; cursor: pointer; order: 3;}
-.nav { display: ;}
+.header__acciones {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+
+/*Menu: simepre visible, en una fila en movil**/
+
+.nav {
+    width: 100%;
+    order: 3;
+}
+
+.nav a {
+    display: block;
+    padding: 0-3rem 0;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s; border-color: 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: var(--verde-oscuro);
+    border-color: var(--verde-oscuro)
+}
+
