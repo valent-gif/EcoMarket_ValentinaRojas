@@ -51,7 +51,7 @@
 }
 
 /*--Hero--*/
-.herob{
+.hero{
     min-height: 70vh;
     display: flex;
     align-items: center;
@@ -64,4 +64,29 @@
     color: var(--blanco);
 }
 
+.hero h1 {
+    color: var(--blanco);
+    margin-bottom: 1rem;
+}
 
+.hero p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/*--Destacados--*/
+.destacados {
+    max-width: var(--max-ancho);
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.destacados h2 {
+    text-align: center;
+}
+
+.grid-destacados {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
