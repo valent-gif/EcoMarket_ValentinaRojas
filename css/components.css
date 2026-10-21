@@ -147,4 +147,110 @@
   color: var(--verde-oscuro);
   margin-top: 0.2rem;
 }
+.btn--small {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* Insignias de Stock */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--blanco);
+  z-index: 2;
+}
+
+.badge--stock {
+  background: var(--verde-oscuro);
+}
+
+.badge--agotado {
+  background: var(--rojo);
+}
+
+/* Botón Favorito Interactivo */
+.fav-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn-favorito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 1rem;
+  color: var(--gris);
+  transition: transform 0.2s ease, color 0.2s ease;
+  user-select: none;
+}
+
+.btn-favorito:hover {
+  transform: scale(1.15);
+}
+
+/* Al marcar el checkbox oculto, el corazón cambia a rojo */
+.fav-toggle:checked + .btn-favorito {
+  color: var(--rojo);
+}
+
+/* Soporte :active adicional */
+.btn-favorito:active {
+  transform: scale(0.9);
+}
+
+/* Paginación Visual */
+.paginacion {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.paginacion__lista {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.paginacion__btn,
+.paginacion__link {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  background: var(--blanco);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.paginacion__link--active,
+.paginacion__link:hover:not(.paginacion__link--active),
+.paginacion__btn:hover:not(.paginacion__btn--disabled) {
+  background: var(--verde-oscuro);
+  color: var(--blanco);
+}
+
+.paginacion__btn--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 
