@@ -113,3 +113,18 @@
     font-size: 0.9rem;
     opacity: 0.85;
 }
+/*--Table--*/
+@media (min-width: 600px) {
+    .grid-destacados { grid-template-columns: repeat(2, 1fr); }
+    .foter__inner { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+/*--Desktop--*/
+@media (min-width: 900px) {
+    .header__inner { flex-wrap: nowrap;}
+    .nav { width: auto; order: 0;}
+    .nav ul { flex-wrap: nowrap; gap: 1.5rem;}
+    .grid-destacados { grid-template-columns: repeat(3, 1fr);}
+}
+
