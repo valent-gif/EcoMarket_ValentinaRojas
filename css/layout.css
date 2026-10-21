@@ -50,3 +50,18 @@
     border-color: var(--verde-oscuro)
 }
 
+/*--Hero--*/
+.herob{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    background:
+        linerar-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../img/hero/hero.jpg") center / cover no-repeat;
+    color: var(--blanco);
+}
+
+
