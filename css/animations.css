@@ -17,3 +17,28 @@
 .hero__contenido {
   animation: aparecer 0.8s ease-out;
 }
+
+/* Principios ecológicos y redes sociales con animación scale al hacer hover */
+.principio-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.14);
+}
+
+.red-social-btn,
+.footer .redes a {
+  display: inline-flex;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.red-social-btn:hover {
+  transform: scale(1.18);
+  background: var(--verde-claro);
+}
+
+.footer .redes a:hover {
+  transform: scale(1.12);
+}
