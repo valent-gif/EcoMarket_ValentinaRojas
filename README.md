@@ -87,6 +87,9 @@ EcoMarket_ValentinaRojas/
 | `>= 900px / 1024px` | Escritorio | 4 columnas | 3 / 4 columnas + Layout horizontal |
 
 ---
+## Link de la pagina web debe ser deplegada
 
+El proyecto se encuentra alojado y funcionando en tiempo real en el siguiente enlace 
+**[]
 **Autora:** Valentina Rojas Moratto — *Bucaramanga, Colombia (2026)*
 
