@@ -87,6 +87,27 @@ EcoMarket_ValentinaRojas/
 | `>= 900px / 1024px` | Escritorio | 4 columnas | 3 / 4 columnas + Layout horizontal |
 
 ---
+## Link de la pagina web debe ser deplegada
+
+El proyecto se encuentra alojado y funcionando en tiempo real en el siguiente enlace 
+**[https://splendid-conkies-2ef162.netlify.app/](https://splendid-conkies-2ef162.netlify.app/)**[cite: 6]
+
+---
+
+##Capturads de Pantalla
+
+### Vista Movil
+<p align="center">
+  <img src="img/captura_movil.jpeg" alt="Vista movil de Ecomarket" width="330">
+</p>
+
+### Vista Computador
+<p align="center">
+  <img src="img/captura-computador.jpeg" alt="Vista en computador de EcoMarket width="850">
+</p>
+
+---
+
 
 **Autora:** Valentina Rojas Moratto — *Bucaramanga, Colombia (2026)*
 
