@@ -90,7 +90,7 @@ EcoMarket_ValentinaRojas/
 ## Link de la pagina web debe ser deplegada
 
 El proyecto se encuentra alojado y funcionando en tiempo real en el siguiente enlace 
-**[]()**[cite: 6]
+**[https://splendid-conkies-2ef162.netlify.app/](https://splendid-conkies-2ef162.netlify.app/)**[cite: 6]
 
 ---
 
